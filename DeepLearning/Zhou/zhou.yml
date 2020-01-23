@@ -1,0 +1,17 @@
+name: bin_ai_envc
+channels:
+  - https://repo.continuum.io/pkgs/main
+  - defaults
+dependencies:
+  - python=3.6
+  - keras
+  - tensorflow-gpu
+  - git
+  - numpy
+  - matplotlib
+  - pip:
+    - git+https://www.github.com/keras-team/keras-contrib.git
+    - pydicom
+    - simpleitk
+
+

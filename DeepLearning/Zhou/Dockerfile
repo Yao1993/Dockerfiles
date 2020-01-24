@@ -1,10 +1,5 @@
-FROM yao11/cuda-devel:ubuntu-with-ssh
+FROM yao11/cuda-devel:devel-tools
 
-
-RUN apt-get update && apt-get install -y git zsh build-essential cmake vim htop
-
-RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
-RUN chsh -s /usr/bin/zsh
 
 RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh && \
     /bin/bash ~/miniconda.sh -b -p /opt/conda && \

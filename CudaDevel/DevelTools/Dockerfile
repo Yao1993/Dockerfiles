@@ -1,4 +1,4 @@
-From yao11/cuda-devel:core
+From yao11/cuda-devel:ubuntu-with-ssh
 
 RUN apt-get update && apt-get install -y git zsh build-essential cmake vim htop
 

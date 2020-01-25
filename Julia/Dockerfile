@@ -67,5 +67,8 @@ RUN set -eux; \
 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; \
 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \
 	\
+
+echo "export PATH=$JULIA_PATH:$PATH" >> ~/.zshrc
+
 # smoke test
 	julia --version

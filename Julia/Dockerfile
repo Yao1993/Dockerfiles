@@ -68,7 +68,7 @@ RUN set -eux; \
 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \
 	\
 
-echo "export PATH=$JULIA_PATH:$PATH" >> ~/.zshrc
+echo "export PATH=$JULIA_PATH/bin:\$PATH" >> ~/.zshrc
 
 # smoke test
 	julia --version

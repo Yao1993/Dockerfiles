@@ -1,0 +1,15 @@
+name: streamlit_devel
+dependencies:
+- python=3.7
+- pytorch::pytorch==1.3.1
+- scipy=1.2.0
+- pytorch::torchvision=0.2.2
+- pillow=6.2.1
+- simpleitk::simpleitk=1.2.4
+- numpy
+- matplotlib
+- pip:
+  - dominate==2.4.0
+  - visdom==0.1.8.9
+  - pydicom==1.3.0
+  - streamlit
